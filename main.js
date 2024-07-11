@@ -5,8 +5,8 @@ console.log("mmm", menus)
 menus.forEach(menu=>menu.addEventListener("click", (event)=>getNewsByCategory(event)))
 
 const getLatestNews = async() => {
-    // const url = `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?`
-    const url = new URL(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${API_KEY}`);
+    const url = `https://noona-times-be-5ca9402f90d9.herokuapp.com/top-headlines?`
+    // const url = new URL(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${API_KEY}`);
     const response =  await fetch(url);
     const data = await response.json();
     console.log("rrrr", response);
