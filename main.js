@@ -76,7 +76,7 @@ const getNewsByKeyword = async() =>{
     }
 
     await getNews();
-    document.getElementById("seach-input").value = "";
+    document.getElementById("seach-input").value = ""; //검색이 완료되면 input field를 clear한다
 }
 
 const render =()=>{
