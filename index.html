@@ -26,7 +26,7 @@
         &nbsp;
         <i class="fas fa-search icon-button" onclick="openSearchBox()"></i>
         <span class="input-area" id="input-area">
-            <input id="seach-input" id="search-input" placeholder="search"/>
+            <input id="seach-input" id="search-input" placeholder="search" onkeypress="keywordEnter(event)"/>
             <button class="search-button" onclick="getNewsByKeyword()">검색</button>
         </span>
         

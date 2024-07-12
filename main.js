@@ -62,6 +62,10 @@ const getNewsByCategory = async (event)=>{
     await getNews();
 }
 
+const keywordEnter=(event)=>{
+    if (event.key=='Enter') getNewsByKeyword()
+}
+
 const getNewsByKeyword = async() =>{
     const keyword = document.getElementById("seach-input").value;
 
