@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.head-line:hover{
+    cursor: pointer;
+}
+
 .head-line svg{
     width: 430px;
 }
@@ -54,7 +58,7 @@
     position: absolute;
     top: 0;
     right: 25px;
-    front-size: 36px;
+    font-size: 36px;
     margin-left: 50px;
     border: none;
     background: none;
