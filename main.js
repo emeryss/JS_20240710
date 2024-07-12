@@ -76,6 +76,7 @@ const getNewsByKeyword = async() =>{
     }
 
     await getNews();
+    document.getElementById("seach-input").value = "";
 }
 
 const render =()=>{
